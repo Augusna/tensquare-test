@@ -1,0 +1,17 @@
+server:
+  port: 9013
+spring:
+  application:
+    name: tensquare-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/itgo123/tensquare_test.git
+  rabbitmq:
+    host: 192.168.35.129
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

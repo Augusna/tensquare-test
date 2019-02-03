@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  cloud:
+    config:
+      #环境
+      profile: dev
+      #配置文件名字
+      name: base
+      label: master
+      #暂时先这么写，以后用服务发现的方式去获取配置service
+      uri: http://localhost:9013
+  rabbitmq:
+    host: 192.168.35.129

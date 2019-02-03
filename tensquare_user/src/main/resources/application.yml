@@ -1,0 +1,28 @@
+server: 
+  port: 9008
+spring: 
+  application:  
+    name: tensquare-user #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.35.129:3306/tensquare_user?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 517529
+  jpa: 
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 192.168.35.129
+#  rabbitmq:
+#    host: 192.168.35.129
+#jjwt生成令牌需要盐和过期时间；为了灵活，没有在common模块中写，而是写在需要调用它的模块中，这样灵活性高,是可以的；
+jwt:
+  config:
+    key: itcast    #这是盐
+    ttl: 3600000      #过期时间，一小时
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
