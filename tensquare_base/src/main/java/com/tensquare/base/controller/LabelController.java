@@ -1,6 +1,5 @@
 package com.tensquare.base.controller;
 
-import com.netflix.discovery.converters.Auto;
 import com.tensquare.base.pojo.Label;
 import com.tensquare.base.service.LabelService;
 import com.tensquare.common.entity.PageResult;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @CrossOrigin

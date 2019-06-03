@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.util.Date;
+
 /**
  * 实体类
  * @author Administrator
@@ -31,8 +33,23 @@ public class Problem implements Serializable{
 	private String replyname;//回复人昵称
 	private java.util.Date replytime;//回复日期
 
-	
-	public String getId() {		
+	public Problem(String id, String title, String content, Date createtime, Date updatetime, String userid, String nickname, Long visits, Long thumbup, Long reply, String solve, String replyname, Date replytime) {
+		this.id = id;
+		this.title = title;
+		this.content = content;
+		this.createtime = createtime;
+		this.updatetime = updatetime;
+		this.userid = userid;
+		this.nickname = nickname;
+		this.visits = visits;
+		this.thumbup = thumbup;
+		this.reply = reply;
+		this.solve = solve;
+		this.replyname = replyname;
+		this.replytime = replytime;
+	}
+
+	public String getId() {
 		return id;
 	}
 	public void setId(String id) {

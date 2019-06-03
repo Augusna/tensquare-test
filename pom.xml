@@ -15,7 +15,7 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>tensquare_common</module>
+        <module>tensquare_commons</module>
         <module>tensquare_base</module>
         <module>tensquare_recruit</module>
         <module>tensquare_qa</module>
@@ -24,6 +24,7 @@
         <module>tensquare_spit</module>
         <module>tensquare_search</module>
         <module>tensquare_user</module>
+        <module>tensquare_eureka</module>
     </modules>
     <packaging>pom</packaging>
 

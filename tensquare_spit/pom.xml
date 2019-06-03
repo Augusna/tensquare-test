@@ -34,7 +34,7 @@
         </dependency>
         <dependency>
             <groupId>com.tensquare</groupId>
-            <artifactId>tensquare_common</artifactId>
+            <artifactId>tensquare_commons</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
